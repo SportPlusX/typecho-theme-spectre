@@ -7,6 +7,7 @@
 ## Introduction 介绍
 
 A Typecho port of the Modern, Simple & Elegant theme Spectre for Hexo.
+
 现代、简洁、优雅的 Hexo 主题 Spectre 的 Typecho 移植版。
 
 ## Demo 演示
