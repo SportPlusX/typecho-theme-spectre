@@ -43,7 +43,7 @@
                 </p>
             </section>
             <section class="post-footer-action">
-                <?php $this->need('share_menu.php'); ?>
+                <?php $this->need('particle-share-menu.php'); ?>
             </section>
         </div>
         <!-- Comment -->

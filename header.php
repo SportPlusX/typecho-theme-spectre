@@ -44,9 +44,9 @@
     <style id="style_css"></style>
     <script>
         window.lsLoadCSSMaxNums = 3;
-        lsloader.css("spectre_css","<?php $this->options->themeUrl('libs/spectre/spectre.min.css'); ?>");
-        lsloader.css("spectre_exp_css","<?php $this->options->themeUrl('libs/spectre/spectre-exp.min.css'); ?>");
-        lsloader.css("style_css","<?php $this->options->themeUrl('style.css'); ?>");
+        lsloader.css("spectre_css","<?php echo themeFixedResUrl('libs/spectre/spectre.min.css'); ?>");
+        lsloader.css("spectre_exp_css","<?php echo themeFixedResUrl('libs/spectre/spectre-exp.min.css'); ?>");
+        lsloader.css("style_css","<?php echo themeFixedResUrl('style.css'); ?>");
     </script>
     <?php $this->options->spectreCustomHead(); ?>
 </head>

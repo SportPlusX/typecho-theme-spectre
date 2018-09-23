@@ -209,11 +209,11 @@ function themeFields($layout) {
 }
 
 function themeVersionStr() {
-    return '0.1.1';
+    return '0.1.2';
 }
 
 function themeOldVersions() {
-    return array('0.1.0');
+    return array('0.1.1', '0.1.0');
 }
 
 function copyrightYearText() {
@@ -301,6 +301,16 @@ function themeResUrl($customUrl, $relativePath) {
         return $customUrl;
     }
     if ($options->spectreCDNMode == 'Custom' && $customUrl != '@' && !empty($options->spectreCustomCDN)) {
+        return Typecho_Common::url($relativePath, $options->spectreCustomCDN);
+    }
+    else {
+        return Typecho_Common::url($relativePath, $options->themeUrl);
+    }
+}
+
+function themeFixedResUrl($relativePath) {
+    Typecho_Widget::widget('Widget_Options')->to($options);
+    if ($options->spectreCDNMode == 'Custom' && !empty($options->spectreCustomCDN)) {
         return Typecho_Common::url($relativePath, $options->spectreCustomCDN);
     }
     else {

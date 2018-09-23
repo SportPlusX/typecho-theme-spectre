@@ -43,6 +43,6 @@ $this->need('header.php');
     </div>
 </div>
 <div class="container container-index-nav">
-<?php $this->need('footer_switch_page.php'); ?>
+<?php $this->need('particle-page-nav.php'); ?>
 </div>
 <?php $this->need('footer.php'); ?>

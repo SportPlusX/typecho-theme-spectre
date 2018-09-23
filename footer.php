@@ -32,7 +32,7 @@
     <?php $this->footer(); ?>
     <?php $this->options->spectreCustomFooter(); ?>
     <!-- Import JS -->
-    <script>lsloader.js("lazy_js","<?php $this->options->themeUrl('libs/js/lazyload.min.js'); ?>")</script>
+    <script>lsloader.js("lazy_js","<?php echo themeFixedResUrl('libs/js/lazyload.min.js'); ?>")</script>
     <script type="text/ls-javascript" id="lazy-load">
     var myLazyLoad = new LazyLoad({
         elements_selector: ".lazy"

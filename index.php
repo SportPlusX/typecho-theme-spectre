@@ -64,7 +64,7 @@ if ($this->is('index') && $this->getCurrentPage() == 1): ?>
                             </li>
                         </ul>
                     </div>
-                    <?php $this->need('share_menu.php'); ?>
+                    <?php $this->need('particle-share-menu.php'); ?>
                     <?php if (!empty($this->options->spectreIndex) && in_array('ShowSearchButton', $this->options->spectreIndex)): ?>
                     <div class="dropdown dropdown-right float-right">
                         <a class="btn btn-link btn-gray dropdown-toggle" tabindex="0"><i class="icon material-icons casino-icons">search</i></a>
@@ -111,6 +111,6 @@ if ($this->is('index') && $this->getCurrentPage() == 1): ?>
 <?php endwhile; ?>
 </div>
 <div class="container container-index-nav">
-<?php $this->need('footer_switch_page.php'); ?>
+<?php $this->need('particle-page-nav.php'); ?>
 </div>
 <?php $this->need('footer.php'); ?>
