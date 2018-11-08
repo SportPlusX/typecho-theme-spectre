@@ -14,8 +14,6 @@ A Typecho port of the Modern, Simple & Elegant theme Spectre for Hexo.
 
 [neoFelhz's Blog](https://blog.nfz.moe) (Original Hexo Theme)
 
-[时晞](https://blog.kenorizon.cn/) (Typecho Theme)
-
 ## Download 下载
 
 1. 前往 [Release 页面](https://github.com/KeNorizon/typecho-theme-spectre/releases/latest) 下载最新的主题包，解压，将其中的文件夹重命名为 spectre 并上传到博客的 /usr/themes 目录下
